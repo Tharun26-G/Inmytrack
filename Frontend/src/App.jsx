@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "./components/Sidebar";
 import MainContent from "./components/MainContent";
 import Navbar from "./components/Navbar";
+import Community from "./components/Community";
 
 const App = () => {
   const appStyle = {
@@ -16,8 +17,11 @@ const App = () => {
     <>
     <Navbar />
     <div style={appStyle}>
-      <Sidebar />
-      <MainContent />
+        <Sidebar />  
+        <MainContent />
+        {/* <div style={{ flex: 1, overflowY: "auto" }}>
+          <Community />
+        </div> */}
       </div>
       </>
   );
